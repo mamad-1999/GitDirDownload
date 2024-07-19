@@ -15,6 +15,8 @@
 
 This tool allows you to download a specific file or directory and its contents from a GitHub repository.
 
+![2024-07-19_15-32](https://github.com/user-attachments/assets/56eebbde-d3ae-4a91-a2a9-c96414919b8c)
+
 ## How to use
 
 1. Run the script.
