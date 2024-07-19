@@ -53,11 +53,11 @@ To install the required package, run:
 
 1. Clone this repository:
 
-`git clone https://github.com/yourusername/github-directory-downloader.git`
+`git clone https://github.com/mamad-1999/GitDirDownload.git`
 
 2. Navigate to the project directory:
 
-`cd github-directory-downloader`
+`cd GitDirDownload`
 
 3. Install the required packages:
 
@@ -67,7 +67,7 @@ To install the required package, run:
 
 Run the script using Python:
 
-`python github_download_content.py`
+`python github-download.py`
 
 For any issues or questions, please open an issue in this repository.
 
