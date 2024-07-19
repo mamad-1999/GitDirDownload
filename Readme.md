@@ -67,7 +67,7 @@ To install the required package, run:
 
 Run the script using Python:
 
-`python github_directory_downloader.py`
+`python github_download_content.py`
 
 For any issues or questions, please open an issue in this repository.
 
