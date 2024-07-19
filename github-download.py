@@ -56,8 +56,9 @@ def download_github_content(url, token, threads=20):
         print(f"File '{local_filename}' downloaded.")
     else:
         # It's a directory
-        main_dir = os.path.basename(path.rstrip('/'))
+        main_dir = os.path.join('/downloads', os.path.basename(path.rstrip('/')))
         os.makedirs(main_dir, exist_ok=True)
+        os.chmod('/downloads', 0o755)
         
         with concurrent.futures.ThreadPoolExecutor(max_workers=threads) as executor:
             futures = []
