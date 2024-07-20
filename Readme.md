@@ -22,7 +22,6 @@ This tool allows you to download a specific file or directory and its contents f
 - Downloads files concurrently for faster performance.
 - Maintains the original directory structure.
 - Logs each downloaded file in the terminal.
-- Creates a main folder named after the last directory in the specified path.
 
 ## Notes
 
