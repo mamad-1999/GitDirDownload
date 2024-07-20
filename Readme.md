@@ -17,15 +17,6 @@ This tool allows you to download a specific file or directory and its contents f
 
 ![2024-07-19_15-32](https://github.com/user-attachments/assets/56eebbde-d3ae-4a91-a2a9-c96414919b8c)
 
-## How to use
-
-1. Run the script.
-2. You will be prompted to enter the following information:
-   - Repository Url: The Url of the repository.
-   - GitHub access token: Your personal access token for authentication.
-   - Number of download threads: How many concurrent downloads to perform (default is 20).
-3. The tool will then download the specified file or directory and its contents.
-
 ## Features
 
 - Downloads files concurrently for faster performance.
@@ -45,32 +36,39 @@ This tool allows you to download a specific file or directory and its contents f
 - Python 3.6 or higher
 - Required Python packages: requests
 
-To install the required package, run:
-
-`pip install -r requirements.txt`
-
 ## Installation
 
 1. Clone this repository:
 
 `git clone https://github.com/mamad-1999/GitDirDownload.git`
 
-2. Navigate to the project directory:
+2. Run the install script:
 
-`cd GitDirDownload`
+```
+chmod +x install.sh
 
-3. Install the required packages:
+./install.sh
+```
 
-`pip install -r requirements.txt`
+This script will:
+- Check for Docker and Python availability
+- Create a 'downloads' folder if it doesn't exist
+- Set correct permissions for the 'downloads' folder
+- Ask you to choose between Docker and local Python setup (if both are available)
+- Set up the environment based on your choice or availability
 
-## Running the Script
+## Usage
 
-Run the script using Python:
+After installation, run the application using the method you chose during setup:
 
-`python github-download.py`
+### With Docker:
+`docker run -it --rm -v "$(pwd)/downloads:/app/downloads" gitdirdownload`
 
-For any issues or questions, please open an issue in this repository.
+### With local Python:
+`python3 github-download.py`
 
-Now, here's the content for your requirements.txt file:
-
-`requests==2.26.0`
+Follow the prompts to download GitHub content. Downloaded files will be saved in the 'downloads' folder.
+You will be prompted to enter the following information:
+   - Repository Url: The Url of the repository.
+   - GitHub access token: Your personal access token for authentication.
+   - Number of download threads: How many concurrent downloads to perform (default is 20).
