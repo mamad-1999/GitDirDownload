@@ -16,6 +16,10 @@ def download_file(session, url, local_filename):
     return local_filename
 
 def download_github_content(url, token, threads=20):
+    downloads_dir = os.path.join(os.getcwd(), 'downloads')
+    if not os.path.exists(downloads_dir):
+        print("Error: 'downloads' folder is missing. Please ensure it exists.")
+        return
     parsed_url = urlparse(url)
     path_parts = parsed_url.path.strip('/').split('/')
     
@@ -56,9 +60,9 @@ def download_github_content(url, token, threads=20):
         print(f"File '{local_filename}' downloaded.")
     else:
         # It's a directory
-        main_dir = os.path.join('/downloads', os.path.basename(path.rstrip('/')))
+        downloads_dir = os.path.join(os.getcwd(), 'downloads')
+        main_dir = os.path.join(downloads_dir, os.path.basename(path.rstrip('/')))
         os.makedirs(main_dir, exist_ok=True)
-        os.chmod('/downloads', 0o755)
         
         with concurrent.futures.ThreadPoolExecutor(max_workers=threads) as executor:
             futures = []
@@ -71,7 +75,7 @@ def download_github_content(url, token, threads=20):
                 future.result()
 
         print(f"All files downloaded to '{main_dir}' directory.")
-
+        
 def print_banner():
     banner = """
   ____ _ _   ____  _      ____                      _                 _ 
