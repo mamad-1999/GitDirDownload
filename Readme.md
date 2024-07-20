@@ -34,6 +34,7 @@ This tool allows you to download a specific file or directory and its contents f
 
 - Python 3.6 or higher
 - Required Python packages: requests
+- Github Access Token [Read](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens)
 
 ## Installation
 
