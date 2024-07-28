@@ -120,9 +120,9 @@ class UserInterface:
      \____|_|\__|____/|_|_|  |____/ \___/ \_/\_/ |_| |_|_|\___/ \__,_|\__,_|
                                                                             
         """
-        blue = "\033[94m"
+        yellow = "\033[93m"
         reset = "\033[0m"
-        print(f"{blue}{banner}{reset}")
+        print(f"{yellow}{banner}{reset}")
 
     @staticmethod
     def get_user_input():
