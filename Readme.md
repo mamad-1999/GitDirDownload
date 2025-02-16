@@ -1,9 +1,9 @@
 # GitHub Content Downloader
 
 [![Python Version](https://img.shields.io/badge/python-3.6%20%7C%203.7%20%7C%203.8-blue)](https://www.python.org/downloads/)
-[![GitHub Issues](https://img.shields.io/github/issues/mamad-1999/GitDirDownload)](https://github.com/mamad-1999/github-follow-insights/issues)
-[![GitHub Stars](https://img.shields.io/github/stars/mamad-1999/GitDirDownload)](https://github.com/mamad-1999/github-follow-insights/stargazers)
-[![GitHub License](https://img.shields.io/github/license/mamad-1999/GitDirDownload)](https://github.com/mamad-1999/github-follow-insights/blob/master/LICENSE)
+[![GitHub Issues](https://img.shields.io/github/issues/blackechox/GitDirDownload)](https://github.com/blackechox/github-follow-insights/issues)
+[![GitHub Stars](https://img.shields.io/github/stars/blackechox/GitDirDownload)](https://github.com/blackechox/github-follow-insights/stargazers)
+[![GitHub License](https://img.shields.io/github/license/blackechox/GitDirDownload)](https://github.com/blackechox/github-follow-insights/blob/master/LICENSE)
 
 
 <p>
@@ -40,7 +40,7 @@ This tool allows you to download a specific file or directory and its contents f
 
 1. Clone this repository:
 
-`git clone https://github.com/mamad-1999/GitDirDownload.git`
+`git clone https://github.com/blackechox/GitDirDownload.git`
 
 2. Run the install script:
 
